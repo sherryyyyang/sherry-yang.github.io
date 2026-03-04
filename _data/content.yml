@@ -1,0 +1,191 @@
+hero:
+  greeting: "Hi, I'm Sherry 👋"
+  headline: "I turn genetic data into actionable insights for Alzheimer's research"
+  subheadline: "PhD Candidate at Stanford | NIH Fellow | Machine Learning × Genomics"
+  cta_primary: "View My Research"
+  cta_secondary: "Let's Connect"
+
+about:
+  intro: |
+    I'm on a mission to decode the genetic mysteries of Alzheimer's Disease using 
+    machine learning. As one of 11 NIH TOPMed Fellows nationwide, I lead research 
+    at the intersection of computational biology and healthcare innovation.
+  
+  quick_facts:
+    - icon: "fa-brain"
+      title: "AI for Genomics"
+      description: "Developing ML models to predict genetic variant functions and identify Alzheimer's causal variants"
+    
+    - icon: "fa-award"
+      title: "Published Researcher"
+      description: "Co-first author in Nature Genetics, invited speaker at ASHG (world's largest genetics conference)"
+    
+    - icon: "fa-rocket"
+      title: "Healthcare Innovator"
+      description: "Co-founded Stanford Healthcare Design Challenge, engaging 500+ participants and raising $30K"
+    
+    - icon: "fa-users"
+      title: "Strategic Consultant"
+      description: "Advised leading biotech companies on market strategy and disease indication prioritization"
+
+journey:
+  - year: "2023-2027"
+    milestone: "Stanford PhD Journey"
+    icon: "fa-microscope"
+    description: "Leading cutting-edge research in machine learning for genomics"
+    highlights:
+      - "NIH TOPMed Fellowship ($70K)"
+      - "Nature Genetics publication"
+      - "Co-founded Healthcare Design Challenge"
+      - "Built ML models for Alzheimer's research"
+    color: "#8C1515"
+    
+  - year: "2025"
+    milestone: "Machine Learning Engineer"
+    icon: "fa-robot"
+    description: "Built evaluation pipelines for biomedical AI agents at Medeloop"
+    highlights:
+      - "Defined benchmarking criteria with senior leadership"
+      - "Developed evaluation metrics for key use cases"
+      - "Created automated pipeline adopted company-wide"
+    color: "#00B2A9"
+    
+  - year: "2019-2023"
+    milestone: "Columbia University"
+    icon: "fa-graduation-cap"
+    description: "B.A. in Biological Science with Statistics concentration"
+    highlights:
+      - "GPA: 3.78/4.0, John Jay Scholar"
+      - "Top 10% Engineering Fellowship"
+      - "Interned at IQVIA and Illumina"
+      - "Rotated through business and science roles"
+    color: "#B9D9EB"
+
+research:
+  current:
+    title: "Current Research Focus"
+    tagline: "Unlocking Alzheimer's Genetic Secrets"
+    description: |
+      I'm leading a team developing machine learning models that predict how genetic 
+      variants affect disease risk. By analyzing long-read genome sequences and multi-omics 
+      data, we're identifying the genetic variants that actually cause Alzheimer's Disease—
+      not just correlate with it.
+    
+    impact:
+      - metric: "2"
+        label: "Team Members Led"
+      - metric: "Nature Genetics"
+        label: "Publication Venue"
+      - metric: "Multiple"
+        label: "Institutional Collaborations"
+  
+  publications:
+    - title: "Long-read genome sequencing and multi-omics in aging and neurodegeneration"
+      venue: "medRxiv"
+      role: "Co-first author"
+      description: "Pioneering work combining cutting-edge sequencing with multi-omics to understand brain aging"
+      link: "#"
+      tags: ["Genomics", "Machine Learning", "Alzheimer's"]
+    
+    - title: "Engineering Radioprotective Human Cells Using Tardigrade Proteins"
+      venue: "BioRxiv"
+      role: "Co-author"
+      description: "Explored how tardigrade proteins could protect human cells from radiation damage"
+      link: "#"
+      tags: ["Synthetic Biology", "Space Medicine"]
+
+ventures:
+  consulting:
+    title: "Strategic Biotech Consulting"
+    company: "Biotech Connection – Bay Area"
+    description: |
+      I help leading biotech companies make smarter decisions about which diseases to target. 
+      Through rigorous due diligence and market analysis, I've guided portfolio strategy and 
+      disease indication prioritization.
+    achievements:
+      - "Performed due diligence on multiple disease indications"
+      - "Prioritized 2 genetic-driven diseases through portfolio analysis"
+      - "Presented directly to senior management"
+  
+  leadership:
+    - name: "Stanford Healthcare Design Challenge"
+      role: "Co-founder & Managing Director"
+      period: "2024-2026"
+      impact: |
+        Co-created Stanford's inaugural healthcare innovation competition. Led a team of 12, 
+        engaged 500+ participants including healthcare executives and KOLs, and raised $30K+ 
+        from Stanford and industry partners.
+      image: "healthcare-challenge.jpg"
+    
+    - name: "Stanford Biotechnology Group"
+      role: "Career Development Board Member"
+      period: "2024-Present"
+      impact: |
+        Organize fireside chats with senior pharma executives, connecting 70+ students 
+        with industry leaders and creating pathways from academia to industry.
+      image: "biotech-group.jpg"
+
+expertise:
+  technical:
+    - category: "Machine Learning & AI"
+      skills:
+        - name: "Python"
+          level: 95
+        - name: "R"
+          level: 90
+        - name: "Shell Scripting"
+          level: 85
+        - name: "Matlab"
+          level: 80
+        - name: "Java"
+          level: 70
+    
+    - category: "Data & Analytics"
+      skills:
+        - name: "Statistical Modeling"
+          level: 95
+        - name: "Genomic Analysis"
+          level: 90
+        - name: "Data Visualization"
+          level: 85
+        - name: "Excel & PowerPoint"
+          level: 90
+
+  languages:
+    - name: "English"
+      flag: "🇺🇸"
+      level: "Native"
+    - name: "Mandarin Chinese"
+      flag: "🇨🇳"
+      level: "Fluent"
+    - name: "Shanghainese"
+      flag: "🇨🇳"
+      level: "Fluent"
+    - name: "French"
+      flag: "🇫🇷"
+      level: "Working Proficiency"
+
+beyond_work:
+  - activity: "Mountain Hiking"
+    icon: "fa-mountain"
+    description: "Summited Fitz Roy (3,400 ft elevation, 13 miles)"
+    image: "hiking.jpg"
+  
+  - activity: "Francophone Travel"
+    icon: "fa-plane"
+    description: "Exploring French-speaking countries while practicing the language"
+    image: "travel.jpg"
+  
+  - activity: "Masterclass Enthusiast"
+    icon: "fa-video"
+    description: "Learning from world experts across diverse fields"
+    image: "learning.jpg"
+
+contact:
+  heading: "Let's Create Something Amazing Together"
+  subheading: "Whether you're interested in collaboration, consulting, or just want to chat about genomics and AI—I'd love to hear from you."
+  
+  email: "nyang19@stanford.edu"
+  phone: "617-320-0339"
+  linkedin: "linkedin.com/in/sherry-n-yang"
+  location: "Menlo Park, CA"
