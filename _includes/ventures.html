@@ -1,0 +1,95 @@
+<section id="ventures" class="ventures-section">
+    <div class="container">
+        <div class="section-intro" data-aos="fade-up">
+            <h2 class="section-title">Beyond Research</h2>
+            <div class="title-underline"></div>
+            <p class="section-description">Bridging academia and industry through consulting and leadership</p>
+        </div>
+        
+        <!-- Consulting -->
+        <div class="consulting-highlight" data-aos="fade-up">
+            <div class="consulting-content">
+                <div class="consulting-badge">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Strategic Consulting</span>
+                </div>
+                <h3>{{ site.data.content.ventures.consulting.title }}</h3>
+                <p class="company-name">{{ site.data.content.ventures.consulting.company }}</p>
+                <p class="consulting-description">{{ site.data.content.ventures.consulting.description }}</p>
+                <ul class="consulting-achievements">
+                    {% for achievement in site.data.content.ventures.consulting.achievements %}
+                    <li>{{ achievement }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Leadership -->
+        <div class="leadership-grid">
+            {% for role in site.data.content.ventures.leadership %}
+            <div class="leadership-card" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 100 }}">
+                <div class="leadership-header">
+                    <h4>{{ role.name }}</h4>
+                    <span class="role-badge">{{ role.role }}</span>
+                </div>
+                <p class="role-period">{{ role.period }}</p>
+                <p class="role-impact">{{ role.impact }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- Skills Showcase -->
+        <div class="skills-showcase" data-aos="fade-up">
+            <h3 class="subsection-title">Technical Expertise</h3>
+            <div class="skills-container">
+                {% for category in site.data.content.expertise.technical %}
+                <div class="skill-category">
+                    <h4>{{ category.category }}</h4>
+                    <div class="skills-bars">
+                        {% for skill in category.skills %}
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>{{ skill.name }}</span>
+                                <span>{{ skill.level }}%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: {{ skill.level }}%"></div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <!-- Languages & Interests -->
+        <div class="personal-section">
+            <div class="languages-section" data-aos="fade-up">
+                <h3 class="subsection-title">Languages</h3>
+                <div class="languages-grid">
+                    {% for lang in site.data.content.expertise.languages %}
+                    <div class="language-card">
+                        <span class="flag">{{ lang.flag }}</span>
+                        <h5>{{ lang.name }}</h5>
+                        <p>{{ lang.level }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <div class="interests-section" data-aos="fade-up">
+                <h3 class="subsection-title">Beyond Work</h3>
+                <div class="interests-grid">
+                    {% for activity in site.data.content.beyond_work %}
+                    <div class="interest-card">
+                        <i class="fas {{ activity.icon }}"></i>
+                        <h5>{{ activity.activity }}</h5>
+                        <p>{{ activity.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
