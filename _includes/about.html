@@ -1,0 +1,21 @@
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-intro" data-aos="fade-up">
+            <h2 class="section-title">Who I Am</h2>
+            <div class="title-underline"></div>
+            <p class="section-description">{{ site.data.content.about.intro }}</p>
+        </div>
+        
+        <div class="quick-facts-grid">
+            {% for fact in site.data.content.about.quick_facts %}
+            <div class="fact-card" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 100 }}">
+                <div class="fact-icon">
+                    <i class="fas {{ fact.icon }}"></i>
+                </div>
+                <h3>{{ fact.title }}</h3>
+                <p>{{ fact.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
