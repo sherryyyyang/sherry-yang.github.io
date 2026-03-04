@@ -1,0 +1,49 @@
+<section id="research" class="research-section">
+    <div class="container">
+        <div class="section-intro" data-aos="fade-up">
+            <h2 class="section-title">Research & Impact</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <!-- Current Research -->
+        <div class="current-research" data-aos="fade-up">
+            <div class="research-content">
+                <div class="research-text">
+                    <h3>{{ site.data.content.research.current.title }}</h3>
+                    <p class="research-tagline">{{ site.data.content.research.current.tagline }}</p>
+                    <p class="research-description">{{ site.data.content.research.current.description }}</p>
+                </div>
+                <div class="research-impact">
+                    {% for stat in site.data.content.research.current.impact %}
+                    <div class="impact-stat">
+                        <h4>{{ stat.metric }}</h4>
+                        <p>{{ stat.label }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Publications -->
+        <div class="publications-section">
+            <h3 class="subsection-title" data-aos="fade-up">Selected Publications</h3>
+            <div class="publications-grid">
+                {% for pub in site.data.content.research.publications %}
+                <div class="publication-card" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 100 }}">
+                    <div class="pub-header">
+                        <span class="pub-role">{{ pub.role }}</span>
+                        <span class="pub-venue">{{ pub.venue }}</span>
+                    </div>
+                    <h4>{{ pub.title }}</h4>
+                    <p>{{ pub.description }}</p>
+                    <div class="pub-tags">
+                        {% for tag in pub.tags %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
